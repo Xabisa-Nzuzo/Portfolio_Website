@@ -31,7 +31,7 @@ export const skills: Skill[] = [
   { name: 'Git', category: 'Tools', proficiency: 'Expert', years: 4 },
   
   // Databases
-  { name: 'PostgreSQL', category: 'Databases', proficiency: 'Advanced', years: 3 },
-  { name: 'MongoDB', category: 'Databases', proficiency: 'Intermediate', years: 2 },
-  { name: 'Redis', category: 'Databases', proficiency: 'Intermediate', years: 1 },
+  { name: 'SQL', category: 'Databases', proficiency: 'Intermediate', years: 3 },
+  { name: 'MongoDB', category: 'Databases', proficiency: 'Begginer', years: 1 },
+  
 ];
