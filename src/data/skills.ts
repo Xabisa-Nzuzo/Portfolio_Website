@@ -24,11 +24,10 @@ export const skills: Skill[] = [
   { name: 'Django', category: 'Frameworks', proficiency: 'Intermediate', years: 2 },
   
   // Cloud & Tools
-  { name: 'Microsoft', category: 'Cloud', proficiency: 'Intermediate', years: 3 },
+  { name: 'Microsoft', category: 'Cloud', proficiency: 'Intermediate', years: 2 },
   { name: 'Google Cloud', category: 'Cloud', proficiency: 'Beginner', years: 1 },
-  { name: 'Docker', category: 'Tools', proficiency: 'Advanced', years: 2 },
-  { name: 'Kubernetes', category: 'Tools', proficiency: 'Intermediate', years: 1 },
-  { name: 'Git', category: 'Tools', proficiency: 'Expert', years: 4 },
+
+  { name: 'Git', category: 'Tools', proficiency: 'Intermediate', years: 3 },
   
   // Databases
   { name: 'SQL', category: 'Databases', proficiency: 'Intermediate', years: 3 },
