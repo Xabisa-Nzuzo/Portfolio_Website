@@ -17,10 +17,8 @@ export const skills: Skill[] = [
   { name: 'MLflow', category: 'AI/ML', proficiency: 'Intermediate', years: 1 },
   
   // Frameworks
-  { name: 'React', category: 'Frameworks', proficiency: 'Advanced', years: 3 },
-  { name: 'Node.js', category: 'Frameworks', proficiency: 'Advanced', years: 3 },
-  { name: 'FastAPI', category: 'Frameworks', proficiency: 'Advanced', years: 2 },
-  { name: 'Flask', category: 'Frameworks', proficiency: 'Advanced', years: 2 },
+  { name: 'React', category: 'Frameworks', proficiency: 'Begginer', years: 1 },
+  { name: 'Node.js', category: 'Frameworks', proficiency: 'Begginer', years: 1 },
   { name: 'Django', category: 'Frameworks', proficiency: 'Intermediate', years: 2 },
   
   // Cloud & Tools
