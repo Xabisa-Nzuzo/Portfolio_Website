@@ -85,32 +85,32 @@ const Experience: React.FC = () => {
   ];
 
   return (
-    <section id="experience" className="py-20 bg-slate-50">
+    <section id="experience" className="py-20 bg-gray-50 dark:bg-gray-800 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-slate-900 mb-4">Experience & Education</h2>
-          <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+          <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">Experience & Education</h2>
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             A proven track record of delivering impactful AI solutions and leading technical teams
           </p>
         </div>
 
         {/* Professional Experience */}
         <div className="mb-16">
-          <h3 className="text-2xl font-bold text-slate-900 mb-8">Professional Experience</h3>
+          <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-8">Professional Experience</h3>
           <div className="space-y-8">
             {experiences.map((exp, index) => (
-              <div key={index} className="bg-white rounded-lg shadow-md p-8">
+              <div key={index} className="bg-white dark:bg-gray-900 rounded-lg shadow-md p-8 border border-gray-200 dark:border-gray-700">
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                   <div>
-                    <h4 className="text-xl font-bold text-slate-900">{exp.title}</h4>
-                    <p className="text-lg text-blue-600 font-medium">{exp.company}</p>
+                    <h4 className="text-xl font-bold text-gray-900 dark:text-white">{exp.title}</h4>
+                    <p className="text-lg text-purple-600 dark:text-purple-400 font-medium">{exp.company}</p>
                   </div>
                   <div className="flex flex-col md:items-end mt-2 md:mt-0">
-                    <div className="flex items-center text-slate-600 mb-1">
+                    <div className="flex items-center text-gray-600 dark:text-gray-300 mb-1">
                       <Calendar className="w-4 h-4 mr-1" />
                       <span className="text-sm">{exp.duration}</span>
                     </div>
-                    <div className="flex items-center text-slate-600">
+                    <div className="flex items-center text-gray-600 dark:text-gray-300">
                       <MapPin className="w-4 h-4 mr-1" />
                       <span className="text-sm">{exp.location}</span>
                     </div>
@@ -119,23 +119,23 @@ const Experience: React.FC = () => {
 
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
                   <div className="lg:col-span-2">
-                    <h5 className="font-semibold text-slate-900 mb-3">Key Responsibilities</h5>
+                    <h5 className="font-semibold text-gray-900 dark:text-white mb-3">Key Responsibilities</h5>
                     <ul className="space-y-2 mb-6">
                       {exp.description.map((item, idx) => (
-                        <li key={idx} className="text-slate-600 flex items-start">
-                          <span className="text-blue-600 mr-2">•</span>
+                        <li key={idx} className="text-gray-600 dark:text-gray-300 flex items-start">
+                          <span className="text-purple-600 dark:text-purple-400 mr-2">•</span>
                           {item}
                         </li>
                       ))}
                     </ul>
 
                     <div className="mb-4">
-                      <h5 className="font-semibold text-slate-900 mb-2">Technologies</h5>
+                      <h5 className="font-semibold text-gray-900 dark:text-white mb-2">Technologies</h5>
                       <div className="flex flex-wrap gap-2">
                         {exp.technologies.map((tech) => (
                           <span
                             key={tech}
-                            className="bg-blue-50 text-blue-600 px-2 py-1 rounded-md text-sm font-medium"
+                            className="bg-purple-50 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 px-2 py-1 rounded-md text-sm font-medium"
                           >
                             {tech}
                           </span>
@@ -145,14 +145,14 @@ const Experience: React.FC = () => {
                   </div>
 
                   <div>
-                    <h5 className="font-semibold text-slate-900 mb-3 flex items-center">
+                    <h5 className="font-semibold text-gray-900 dark:text-white mb-3 flex items-center">
                       <Award className="w-4 h-4 mr-2" />
                       Key Achievements
                     </h5>
                     <ul className="space-y-2">
                       {exp.achievements.map((achievement, idx) => (
-                        <li key={idx} className="text-slate-600 text-sm flex items-start">
-                          <span className="text-green-600 mr-2">✓</span>
+                        <li key={idx} className="text-gray-600 dark:text-gray-300 text-sm flex items-start">
+                          <span className="text-green-600 dark:text-green-400 mr-2">✓</span>
                           {achievement}
                         </li>
                       ))}
@@ -167,17 +167,17 @@ const Experience: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Education */}
           <div>
-            <h3 className="text-2xl font-bold text-slate-900 mb-6">Education</h3>
+            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Education</h3>
             <div className="space-y-6">
               {education.map((edu, index) => (
-                <div key={index} className="bg-white rounded-lg shadow-md p-6">
-                  <h4 className="text-lg font-bold text-slate-900">{edu.degree}</h4>
-                  <p className="text-blue-600 font-medium">{edu.school}</p>
-                  <p className="text-slate-600 text-sm mb-2">{edu.duration}</p>
-                  <p className="text-slate-700 mb-3">Focus: {edu.focus}</p>
+                <div key={index} className="bg-white dark:bg-gray-900 rounded-lg shadow-md p-6 border border-gray-200 dark:border-gray-700">
+                  <h4 className="text-lg font-bold text-gray-900 dark:text-white">{edu.degree}</h4>
+                  <p className="text-purple-600 dark:text-purple-400 font-medium">{edu.school}</p>
+                  <p className="text-gray-600 dark:text-gray-300 text-sm mb-2">{edu.duration}</p>
+                  <p className="text-gray-700 dark:text-gray-300 mb-3">Focus: {edu.focus}</p>
                   <ul className="space-y-1">
                     {edu.achievements.map((achievement, idx) => (
-                      <li key={idx} className="text-slate-600 text-sm flex items-center">
+                      <li key={idx} className="text-gray-600 dark:text-gray-300 text-sm flex items-center">
                         <Award className="w-3 h-3 text-yellow-500 mr-2" />
                         {achievement}
                       </li>
@@ -190,12 +190,12 @@ const Experience: React.FC = () => {
 
           {/* Certifications */}
           <div>
-            <h3 className="text-2xl font-bold text-slate-900 mb-6">Certifications</h3>
-            <div className="bg-white rounded-lg shadow-md p-6">
+            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Certifications</h3>
+            <div className="bg-white dark:bg-gray-900 rounded-lg shadow-md p-6 border border-gray-200 dark:border-gray-700">
               <ul className="space-y-3">
                 {certifications.map((cert, index) => (
-                  <li key={index} className="flex items-center text-slate-700">
-                    <div className="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
+                  <li key={index} className="flex items-center text-gray-700 dark:text-gray-300">
+                    <div className="w-2 h-2 bg-purple-600 rounded-full mr-3"></div>
                     {cert}
                   </li>
                 ))}
@@ -203,7 +203,7 @@ const Experience: React.FC = () => {
             </div>
 
             {/* Quick Stats */}
-            <div className="mt-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg p-6 text-white">
+            <div className="mt-8 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg p-6 text-white">
               <h4 className="text-lg font-bold mb-4">Career Highlights</h4>
               <div className="space-y-3">
                 <div className="flex items-center">

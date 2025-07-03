@@ -13,11 +13,6 @@ const About: React.FC = () => {
       title: 'Proven Results',
       description: 'Successfully deployed ML models that improved efficiency by 40% and accuracy by 35% across multiple projects.'
     },
- //   {
-//    icon: Users,
-//    title: 'Collaborative Leader',
-  //    description: 'Led cross-functional teams of 5+ developers and data scientists in delivering complex AI projects on time.'
-//    },
     {
       icon: TrendingUp,
       title: 'Continuous Learner',
@@ -26,11 +21,11 @@ const About: React.FC = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-white">
+    <section id="about" className="py-20 bg-white dark:bg-gray-900 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-slate-900 mb-4">About Me</h2>
-          <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+          <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">About Me</h2>
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             Transforming complex data into intelligent solutions that drive business value
           </p>
         </div>
@@ -38,8 +33,8 @@ const About: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Personal Story */}
           <div className="space-y-6">
-            <h3 className="text-2xl font-bold text-slate-900">My Journey</h3>
-            <div className="space-y-4 text-slate-600 leading-relaxed">
+            <h3 className="text-2xl font-bold text-gray-900 dark:text-white">My Journey</h3>
+            <div className="space-y-4 text-gray-600 dark:text-gray-300 leading-relaxed">
               <p>
                 My passion for Data Analytics began during my first IT-related job, 
                 where I was fascinated by the potential of machines to learn and adapt. This curiosity 
@@ -58,9 +53,9 @@ const About: React.FC = () => {
               </p>
             </div>
 
-            <div className="bg-blue-50 p-6 rounded-lg">
-              <h4 className="font-semibold text-slate-900 mb-2">Career Objective</h4>
-              <p className="text-slate-700">
+            <div className="bg-purple-50 dark:bg-purple-900/20 p-6 rounded-lg border border-purple-200 dark:border-purple-800">
+              <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Career Objective</h4>
+              <p className="text-gray-700 dark:text-gray-300">
                 To lead AI initiatives in a forward-thinking organization where I can leverage my 
                 technical expertise and leadership skills to develop innovative solutions that 
                 drive business growth while maintaining ethical AI practices.
@@ -73,27 +68,16 @@ const About: React.FC = () => {
             {highlights.map((highlight, index) => {
               const Icon = highlight.icon;
               return (
-                <div key={index} className="bg-slate-50 p-6 rounded-lg hover:shadow-lg transition-shadow">
-                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                    <Icon className="w-6 h-6 text-blue-600" />
+                <div key={index} className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg hover:shadow-lg transition-all duration-300 border border-gray-200 dark:border-gray-700">
+                  <div className="w-12 h-12 bg-purple-100 dark:bg-purple-900/50 rounded-lg flex items-center justify-center mb-4">
+                    <Icon className="w-6 h-6 text-purple-600 dark:text-purple-400" />
                   </div>
-                  <h4 className="font-semibold text-slate-900 mb-2">{highlight.title}</h4>
-                  <p className="text-sm text-slate-600 leading-relaxed">{highlight.description}</p>
+                  <h4 className="font-semibold text-gray-900 dark:text-white mb-2">{highlight.title}</h4>
+                  <p className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">{highlight.description}</p>
                 </div>
               );
             })}
           </div>
-        </div>
-
-        {/* Personal Branding Statement */}
-        <div className="mt-16 bg-gradient-to-r from-blue-600 to-purple-600 p-8 rounded-lg text-center">
-          <h3 className="text-2xl font-bold text-white mb-4">Personal Branding Statement</h3>
-          <p className="text-blue-100 text-lg max-w-4xl mx-auto leading-relaxed">
-            "I am a results-driven AI/ML engineer who combines deep technical expertise with 
-            strategic thinking to deliver intelligent solutions that transform businesses. 
-            My unique blend of full-stack development skills and machine learning knowledge 
-            enables me to build end-to-end AI systems that are both powerful and practical."
-          </p>
         </div>
       </div>
     </section>

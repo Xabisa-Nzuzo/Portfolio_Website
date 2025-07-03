@@ -9,6 +9,7 @@ import Contact from './components/Contact';
 
 function App() {
   const [activeSection, setActiveSection] = useState('hero');
+  const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,9 +34,22 @@ function App() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  useEffect(() => {
+    if (darkMode) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  }, [darkMode]);
+
   return (
-    <div className="min-h-screen bg-white">
-      <Header activeSection={activeSection} setActiveSection={setActiveSection} />
+    <div className={`min-h-screen transition-colors duration-300 ${darkMode ? 'dark' : ''}`}>
+      <Header 
+        activeSection={activeSection} 
+        setActiveSection={setActiveSection}
+        darkMode={darkMode}
+        setDarkMode={setDarkMode}
+      />
       <main>
         <Hero />
         <About />

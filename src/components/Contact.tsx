@@ -52,23 +52,22 @@ const Contact: React.FC = () => {
       icon: Linkedin,
       label: 'LinkedIn',
       href: 'www.linkedin.com/in/xabisa-nzuzo-684068248',
-      color: 'hover:text-blue-600'
+      color: 'hover:text-purple-600 dark:hover:text-purple-400'
     },
     {
       icon: Github,
       label: 'GitHub',
       href: 'https://github.com/alexchen',
-      color: 'hover:text-slate-800'
+      color: 'hover:text-gray-800 dark:hover:text-gray-300'
     }
-   
   ];
 
   return (
-    <section id="contact" className="py-20 bg-slate-900">
+    <section id="contact" className="py-20 bg-gray-900 dark:bg-gray-950 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-white mb-4">Let's Connect</h2>
-          <p className="text-xl text-slate-300 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Ready to discuss opportunities or collaborate on innovative projects? 
             I'd love to hear from you.
           </p>
@@ -86,13 +85,13 @@ const Contact: React.FC = () => {
                     <a
                       key={index}
                       href={info.href}
-                      className="flex items-center p-4 bg-slate-800 rounded-lg hover:bg-slate-700 transition-colors"
+                      className="flex items-center p-4 bg-gray-800 dark:bg-gray-900 rounded-lg hover:bg-gray-700 dark:hover:bg-gray-800 transition-colors border border-gray-700 dark:border-gray-600"
                     >
-                      <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mr-4">
+                      <div className="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center mr-4">
                         <Icon className="w-6 h-6 text-white" />
                       </div>
                       <div>
-                        <p className="text-slate-400 text-sm">{info.label}</p>
+                        <p className="text-gray-400 text-sm">{info.label}</p>
                         <p className="text-white font-medium">{info.value}</p>
                       </div>
                     </a>
@@ -111,7 +110,7 @@ const Contact: React.FC = () => {
                     <a
                       key={index}
                       href={social.href}
-                      className={`w-12 h-12 bg-slate-800 rounded-lg flex items-center justify-center text-slate-400 transition-colors ${social.color}`}
+                      className={`w-12 h-12 bg-gray-800 dark:bg-gray-900 rounded-lg flex items-center justify-center text-gray-400 transition-colors border border-gray-700 dark:border-gray-600 ${social.color}`}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -123,9 +122,9 @@ const Contact: React.FC = () => {
             </div>
 
             {/* Availability */}
-            <div className="bg-slate-800 rounded-lg p-6">
+            <div className="bg-gray-800 dark:bg-gray-900 rounded-lg p-6 border border-gray-700 dark:border-gray-600">
               <h4 className="text-lg font-bold text-white mb-2">Current Availability</h4>
-              <p className="text-slate-300 mb-4">
+              <p className="text-gray-300 mb-4">
                 I'm actively seeking new opportunities as a Junior Data Analyst, IT Support
                 Open to full-time / part-time positions, and projects
               </p>
@@ -137,14 +136,14 @@ const Contact: React.FC = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="bg-slate-800 rounded-lg p-8">
+          <div className="bg-gray-800 dark:bg-gray-900 rounded-lg p-8 border border-gray-700 dark:border-gray-600">
             <h3 className="text-2xl font-bold text-white mb-6">Send a Message</h3>
             
             {isSubmitted ? (
               <div className="text-center py-8">
                 <CheckCircle className="w-16 h-16 text-green-400 mx-auto mb-4" />
                 <h4 className="text-xl font-bold text-white mb-2">Message Sent!</h4>
-                <p className="text-slate-300">Thank you for reaching out. I'll get back to you soon.</p>
+                <p className="text-gray-300">Thank you for reaching out. I'll get back to you soon.</p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
@@ -156,7 +155,7 @@ const Contact: React.FC = () => {
                     value={formData.name}
                     onChange={handleInputChange}
                     required
-                    className="bg-slate-700 text-white placeholder-slate-400 border border-slate-600 rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+                    className="bg-gray-700 dark:bg-gray-800 text-white placeholder-gray-400 border border-gray-600 dark:border-gray-500 rounded-lg px-4 py-3 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500"
                   />
                   <input
                     type="email"
@@ -165,7 +164,7 @@ const Contact: React.FC = () => {
                     value={formData.email}
                     onChange={handleInputChange}
                     required
-                    className="bg-slate-700 text-white placeholder-slate-400 border border-slate-600 rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+                    className="bg-gray-700 dark:bg-gray-800 text-white placeholder-gray-400 border border-gray-600 dark:border-gray-500 rounded-lg px-4 py-3 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500"
                   />
                 </div>
                 <input
@@ -175,7 +174,7 @@ const Contact: React.FC = () => {
                   value={formData.subject}
                   onChange={handleInputChange}
                   required
-                  className="w-full bg-slate-700 text-white placeholder-slate-400 border border-slate-600 rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+                  className="w-full bg-gray-700 dark:bg-gray-800 text-white placeholder-gray-400 border border-gray-600 dark:border-gray-500 rounded-lg px-4 py-3 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500"
                 />
                 <textarea
                   name="message"
@@ -184,11 +183,11 @@ const Contact: React.FC = () => {
                   value={formData.message}
                   onChange={handleInputChange}
                   required
-                  className="w-full bg-slate-700 text-white placeholder-slate-400 border border-slate-600 rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 resize-none"
+                  className="w-full bg-gray-700 dark:bg-gray-800 text-white placeholder-gray-400 border border-gray-600 dark:border-gray-500 rounded-lg px-4 py-3 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 resize-none"
                 />
                 <button
                   type="submit"
-                  className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition-colors flex items-center justify-center space-x-2"
+                  className="w-full bg-purple-600 hover:bg-purple-700 text-white font-medium py-3 px-6 rounded-lg transition-colors flex items-center justify-center space-x-2"
                 >
                   <Send className="w-4 h-4" />
                   <span>Send Message</span>
@@ -199,8 +198,8 @@ const Contact: React.FC = () => {
         </div>
 
         {/* Footer */}
-        <div className="mt-16 pt-8 border-t border-slate-700 text-center">
-          <p className="text-slate-400">
+        <div className="mt-16 pt-8 border-t border-gray-700 dark:border-gray-600 text-center">
+          <p className="text-gray-400">
             © 2025 Xabisa Nzuzo. Built with React, TypeScript, and Tailwind CSS.
           </p>
         </div>
