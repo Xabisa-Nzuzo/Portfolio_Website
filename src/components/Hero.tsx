@@ -43,10 +43,10 @@ const Hero: React.FC = () => {
              Xabisa Nzuzo
             </h1>
             <div className="text-xl md:text-2xl text-purple-200 font-medium">
-             Data Analyst || IT Support || Cloud Computing
+             AI/ML Engineer || Cloud Data Engineer
             </div>
             <p className="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed">
-             Enthusiastic, detail-oriented, results-driven, and customer-centric with a strong passion for IT systems. Excited to leverage academic knowledge and internship experience to advance my career. Possessing excellent communication skills and a collaborative approach, I am eager to contribute to team success and organizational objectives while continuously enhancing my technical expertise and skill.
+            
             </p>
           </div>
 
