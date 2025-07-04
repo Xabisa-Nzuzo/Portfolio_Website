@@ -208,15 +208,15 @@ const Experience: React.FC = () => {
               <div className="space-y-3">
                 <div className="flex items-center">
                   <Users className="w-5 h-5 mr-3" />
-                  <span>Led teams of up to 6 engineers</span>
+                  <span>Led teams of up to 3 engineers</span>
                 </div>
                 <div className="flex items-center">
                   <Award className="w-5 h-5 mr-3" />
-                  <span>5+ industry certifications</span>
+                  <span>3+ industry certifications</span>
                 </div>
                 <div className="flex items-center">
                   <Calendar className="w-5 h-5 mr-3" />
-                  <span>4+ years in AI/ML engineering</span>
+                  <span>3+ years in AI/ML engineering</span>
                 </div>
               </div>
             </div>
