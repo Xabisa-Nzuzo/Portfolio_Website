@@ -4,7 +4,7 @@ import { Calendar, MapPin, Award, Users } from 'lucide-react';
 const Experience: React.FC = () => {
   const experiences = [
     {
-      title: 'IT Support',
+      title: 'AI Engineer',
       company: 'Capaciti',
       duration: 'Apr 2025 - Current',
       location: 'Gqeberha, South Africa',
@@ -22,7 +22,7 @@ const Experience: React.FC = () => {
       ]
     },
     {
-      title: 'IT Graduate',
+      title: 'Junior ML Engineer',
       company: 'Transnet SOC Ltd',
       duration: 'Aug 2022 - Mar 2025',
       location: 'Gqeberha, South Africa',
@@ -42,8 +42,8 @@ const Experience: React.FC = () => {
     {
       title: 'Full-Stack Developer',
       company: 'StartupTech Solutions',
-      duration: '2019 - 2020',
-      location: 'Austin, TX',
+      duration: 'Jan 2021 -Jul 2022',
+      location: 'Cape Town, South Africa',
       description: [
         'Built responsive web applications using React, Node.js, and MongoDB',
         'Integrated third-party APIs and payment systems for e-commerce platforms',
@@ -61,15 +61,15 @@ const Experience: React.FC = () => {
 
   const education = [
     {
-      degree: 'Master of Science in Computer Science',
-      school: 'Stanford University',
+      degree: 'Advanced Diploma ',
+      school: 'Nelson Mandela University',
       duration: '2017 - 2019',
       focus: 'Artificial Intelligence & Machine Learning',
       achievements: ['GPA: 3.9/4.0', 'Research Assistant in AI Lab', 'Published 2 conference papers']
     },
     {
-      degree: 'Bachelor of Science in Computer Engineering',
-      school: 'UC Berkeley',
+      degree: 'National Diploma',
+      school: 'Nelson Mandela University',
       duration: '2013 - 2017',
       focus: 'Software Engineering & Data Structures',
       achievements: ['Magna Cum Laude', 'Dean\'s List (6 semesters)', 'President of CS Club']
