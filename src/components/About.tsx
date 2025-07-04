@@ -36,20 +36,13 @@ const About: React.FC = () => {
             <h3 className="text-2xl font-bold text-gray-900 dark:text-white">My Journey</h3>
             <div className="space-y-4 text-gray-600 dark:text-gray-300 leading-relaxed">
               <p>
-                My passion for Data Analytics began during my first IT-related job, 
-                where I was fascinated by the potential of machines to learn and adapt. This curiosity 
-                led me to pursue specialized training in machine learning and deep learning technologies.
+                I am an emerging AI/ML engineer with a strong foundation in machine learning, natural language processing, and intelligent application development. My journey in artificial intelligence began with a fascination for how computers can understand and process human language, leading me to specialize in sentiment analysis, conversational AI, and automated decision-making systems.
               </p>
               <p>
-                Over the past 4 years, I've had the privilege of working on diverse AI projects, 
-                from computer vision systems that assist medical professionals in diagnosis to 
-                natural language processing platforms that analyze sentiment at scale. Each project 
-                has reinforced my belief that AI should be accessible, ethical, and beneficial to society.
+               Through intensive bootcamp training and hands-on project development, I have cultivated expertise in Python, machine learning frameworks, and cloud-based AI services. My approach combines technical rigor with creative problem-solving, always focusing on delivering solutions that are both technically sound and user-friendly.
               </p>
               <p>
-                Currently, I'm focused on advancing my expertise in MLOps, responsible AI, and 
-                emerging technologies like generative AI. My goal is to bridge the gap between 
-                cutting-edge research and practical applications that solve real-world challenges.
+               I thrive in collaborative environments where I can contribute to innovative projects that push the boundaries of what's possible with artificial intelligence. My goal is to join a forward-thinking organization where I can apply my skills to real-world challenges while continuing to grow as a professional in this rapidly evolving field.
               </p>
             </div>
 
